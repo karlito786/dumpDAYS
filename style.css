@@ -1,0 +1,56 @@
+* {
+  box-sizing: boder-box;
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  transformn: translate(0);
+  cursor: pointer;
+
+  transform: all 1s 0s ease-in-out;
+}
+
+.box1:hover {
+  transfrom: translateX(100px);
+}
+
+.box2 {
+  width: 400px;
+  height: 400px;
+  background-color: green;
+  cursor: pointer;
+}
+
+.box2:hover {
+  animation-name: imeAnimacije;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-literation-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@keyframes imeAnimacije {
+  0% (
+    transform: translateX(0, 0);
+  )
+  33% (
+    transform: translateX(200px, 0);
+  )
+  66% (
+    transform: translateX(200px, 300px);
+  )
+  100% (
+    transform: translateX(0px, 200px);
+  )
+}
+
+.box3 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  transform: scale(0, 5);
+}
